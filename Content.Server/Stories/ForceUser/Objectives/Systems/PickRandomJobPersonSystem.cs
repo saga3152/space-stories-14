@@ -48,14 +48,14 @@ public sealed class PickRandomJobPersonSystem : EntitySystem
             return;
 
         // no other humans to kill
-        var allHumans = _mind.GetAliveHumansExcept(args.MindId);
+        var allHumans = _mind.GetAliveHumans(args.MindId);
         if (allHumans.Count == 0)
         {
             args.Cancelled = true;
             return;
         }
 
-        var allHeads = new List<EntityUid>();
+        var allHeads = new HashSet<Entity<MindComponent>>();
         foreach (var mind in allHumans)
         {
             if (_job.MindTryGetJob(mind, out var job) && job.ID == comp.JobID)
