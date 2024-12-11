@@ -19,23 +19,29 @@
   name: loadout-group-Jedi-head
   minLimit: 0
   loadouts:
+  # Stories-Partners-Start
   - ClothingHeadHatExe
+  # Stories-Partners-End
 
 - type: loadoutGroup
   id: JediNtMask
   name: loadout-group-Jedi-mask
   minLimit: 0
   loadouts:
+  # Stories-Partners-Start
   - ClothingMaskGasExe
+  # Stories-Partners-End
 
 - type: loadoutGroup
   id: JediNtShoes
   name: loadout-group-Jedi-shoes
   loadouts:
-  - ClothingShoesBootsExe
-  - ClothingShoesBootsJackJediNomad
   - ClothingShoesBootsJackJediNt
+  # Stories-Partners-Start
   - ClothingShoesBootsJackJedi
+  - ClothingShoesBootsJackJediNomad
+  - ClothingShoesBootsExe
+  # Stories-Partners-End
 
 - type: loadoutGroup
   id: JediNtBelt
@@ -50,8 +56,10 @@
   name: loadout-group-Jedi-neck
   minLimit: 0
   loadouts:
-  - ClothingNeckCloakExe
+  # Stories-Partners-Start
   - ClothingNeckMantleJediNt
+  # Stories-Partners-End
+  - ClothingNeckCloakExe
   - ClothingNeckMantleJediNomad
 
 - type: loadoutGroup
@@ -59,63 +67,70 @@
   name: loadout-group-Jedi-jumpsuits
   minLimit: 1
   loadouts:
-  - ClothingUniformJumpsuitExe
-  - ClothingUniformJumpsuitJediNomad
   - ClothingUniformJumpsuitJediNt
+  # Stories-Partners-Start
   - ClothingUniformJumpsuitJedi
+  - ClothingUniformJumpsuitJediNomad
+  - ClothingUniformJumpsuitExe
+  # Stories-Partners-End
 
 - type: loadoutGroup
   id: JediNtBackpack
   name: loadout-group-Jedi-backpack
   loadouts:
-  # Stories-partners - start
-  # Handbag
-  - ClothingBackpackHandbagAdidos
-  - ClothingBackpackHandbagBluesky
-  - ClothingBackpackHandbagEight
-  - ClothingBackpackHandbagGachi
-  - ClothingBackpackHandbagRl
-  # Backpack
-  - ClothingBackpackAdidos
-  - ClothingBackpackBluesky
-  - ClothingBackpackEight
-  - ClothingBackpackGachi
-  - ClothingBackpackRl
-  # Duffel
-  - ClothingBackpackDuffelAdidos
-  - ClothingBackpackDuffelBluesky
-  - ClothingBackpackDuffelEight
-  - ClothingBackpackDuffelGachi
-  - ClothingBackpackDuffelRl
-  # Satchel
-  - ClothingBackpackSatchelAdidos
-  - ClothingBackpackSatchelBluesky
-  - ClothingBackpackSatchelEight
-  - ClothingBackpackSatchelGachi
-  - ClothingBackpackSatchelRl
-  # Stories-partners - end
   - ClothingBackpackJediNt
   - ClothingBackpackSatchelJediNt
+  # Stories-Partners-Start
+  # Adidos
+  - ClothingBackpackHandbagAdidos
+  - ClothingBackpackAdidos
+  - ClothingBackpackDuffelAdidos
+  - ClothingBackpackSatchelAdidos
+  # Bluesky
+  - ClothingBackpackHandbagBluesky
+  - ClothingBackpackBluesky
+  - ClothingBackpackDuffelBluesky
+  - ClothingBackpackSatchelBluesky
+  # Eight
+  - ClothingBackpackHandbagEight
+  - ClothingBackpackEight
+  - ClothingBackpackDuffelEight
+  - ClothingBackpackSatchelEight
+  # Gachi
+  - ClothingBackpackHandbagGachi
+  - ClothingBackpackGachi
+  - ClothingBackpackDuffelGachi
+  - ClothingBackpackSatchelGachi
+  # Rl
+  - ClothingBackpackHandbagRl
+  - ClothingBackpackRl
+  - ClothingBackpackDuffelRl
+  - ClothingBackpackSatchelRl
+  # Stories-Partners-End
 
 - type: loadoutGroup
   id: JediNtOuterClothing
   name: loadout-group-Jedi-outer-clothing
   minLimit: 0
   loadouts:
-  - ClothingOuterVestArmorExe
   - ClothingOuterVestJediNt
+  # Stories-Partners-Start
   - ClothingOuterCoatJedi
+  - ClothingOuterVestArmorExe
+  # Stories-Partners-End
 
 - type: loadoutGroup
   id: JediNtLightsaber
   name: loadout-group-Jedi-lightsaber
   minLimit: 1
   loadouts:
-  - LightsaberCrossguard
-  - LightsaberDouble
-  - LightsaberRapier
-  - LightsaberShort
   - Lightsaber
+  # Stories-Partners-Start
+  - LightsaberShort
+  - LightsaberDouble
+  - LightsaberCrossguard
+  - LightsaberRapier
+  # Stories-Partners-End
 
 # Маска хранителя
 
