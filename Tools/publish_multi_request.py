@@ -15,7 +15,7 @@ RELEASE_DIR = "release"
 # Forks should change these to publish to their own infrastructure.
 #
 ROBUST_CDN_URL = "https://cdn.spacestories.club/"
-FORK_ID = "marines"
+FORK_ID = "stories"
 
 def main():
     session = requests.Session()
