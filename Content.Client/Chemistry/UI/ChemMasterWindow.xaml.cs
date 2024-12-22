@@ -89,7 +89,7 @@ namespace Content.Client.Chemistry.UI
             Tabs.SetTabTitle(1, Loc.GetString("chem-master-window-output-tab"));
         }
 
-        private ReagentButton MakeReagentButton(string text, ChemMasterReagentAmount amount, ReagentId id, bool isBuffer, string origin, string styleClass)
+        private ReagentButton MakeReagentButton(string text, ChemMasterReagentAmount amount, ReagentId id, bool isBuffer, string styleClass)
         {
             var reagentTransferButton = new ReagentButton(text, amount, id, isBuffer, styleClass);
             reagentTransferButton.OnPressed += args
@@ -140,11 +140,9 @@ namespace Content.Client.Chemistry.UI
 
             // Ensure the Panel Info is updated, including UI elements for Buffer Volume, Output Container and so on
             UpdatePanelInfo(castState);
-
-            var output = castState.OutputContainerInfo;
-
-            //BufferOutputVolume.Text = $" {castState.BufferOutputVolume?.Int() ?? 0}u";
-
+    
+            BufferCurrentVolume.Text = $" {castState.BufferCurrentVolume?.Int() ?? 0}u";
+    
             InputEjectButton.Disabled = castState.InputContainerInfo is null;
             OutputEjectButton.Disabled = castState.OutputContainerInfo is null;
             CreateBottleButton.Disabled = castState.OutputContainerInfo?.Reagents == null;
@@ -193,21 +191,32 @@ namespace Content.Client.Chemistry.UI
         /// <param name="state">State data sent by the server.</param>
         private string GenerateLabel(ChemMasterBoundUserInterfaceState state)
         {
-            if (state.BufferOutputVolume == 0)
+            if (state.BufferCurrentVolume == 0)
                 return "";
 
-            var reagent = state.BufferOutputReagents.OrderBy(r => r.Quantity).Last().Reagent;
+            var reagent = state.BufferReagents.OrderBy(r => r.Quantity).First().Reagent;
             _prototypeManager.TryIndex(reagent.Prototype, out ReagentPrototype? proto);
             return proto?.LocalizedName ?? "";
         }
 
-        private void UpdateBufferInfo(BoxContainer bufferInfo, IReadOnlyList<ReagentQuantity> bufferReagents, FixedPoint2? bufferVolume, bool isStorageBuffer, string bufferName)
+        /// <summary>
+        /// Update the container, buffer, and packaging panels.
+        /// </summary>
+        /// <param name="state">State data for the dispenser.</param>
+        private void UpdatePanelInfo(ChemMasterBoundUserInterfaceState state)
         {
-            bufferInfo.Children.Clear();
+            BufferTransferButton.Pressed = state.Mode == ChemMasterMode.Transfer;
+            BufferDiscardButton.Pressed = state.Mode == ChemMasterMode.Discard;
 
-            if (!bufferReagents.Any())
+            BuildContainerUI(InputContainerInfo, state.InputContainerInfo, true);
+            BuildContainerUI(OutputContainerInfo, state.OutputContainerInfo, false);
+
+            BufferInfo.Children.Clear();
+
+            if (!state.BufferReagents.Any())
             {
-                bufferInfo.Children.Add(new Label { Text = Loc.GetString("chem-master-window-buffer-empty-text") });
+                BufferInfo.Children.Add(new Label { Text = Loc.GetString("chem-master-window-buffer-empty-text") });
+
                 return;
             }
 
@@ -215,7 +224,7 @@ namespace Content.Client.Chemistry.UI
             {
                 Orientation = LayoutOrientation.Horizontal
             };
-            bufferInfo.AddChild(bufferHBox);
+            BufferInfo.AddChild(bufferHBox);
 
             var bufferLabel = new Label { Text = $"{Loc.GetString("chem-master-window-buffer-label")} " };
             bufferHBox.AddChild(bufferLabel);
@@ -361,15 +370,13 @@ namespace Content.Client.Chemistry.UI
     {
         public ChemMasterReagentAmount Amount { get; set; }
         public bool IsBuffer = true;
-        public string Origin { get; set; }
         public ReagentId Id { get; set; }
-        public ReagentButton(string text, ChemMasterReagentAmount amount, ReagentId id, bool isBuffer, string origin, string styleClass)
+        public ReagentButton(string text, ChemMasterReagentAmount amount, ReagentId id, bool isBuffer, string styleClass)
         {
             AddStyleClass(styleClass);
             Text = text;
             Amount = amount;
             Id = id;
-            Origin = origin;
             IsBuffer = isBuffer;
         }
     }

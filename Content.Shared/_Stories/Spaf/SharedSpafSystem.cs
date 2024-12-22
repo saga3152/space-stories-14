@@ -1,16 +1,16 @@
 using Content.Shared.Actions;
-using Content.Shared.DoAfter;
-using Content.Shared.Popups;
-using Robust.Shared.Containers;
-using Content.Shared.Nutrition.Components;
-using Content.Shared.Nutrition.EntitySystems;
-using Content.Shared.Fluids;
-using Robust.Shared.Prototypes;
-using Content.Shared.Stealth;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Devour;
 using Content.Shared.Devour.Components;
+using Content.Shared.DoAfter;
+using Content.Shared.Fluids;
 using Content.Shared.Mobs;
+using Content.Shared.Nutrition.Components;
+using Content.Shared.Nutrition.EntitySystems;
+using Content.Shared.Popups;
+using Content.Shared.Stealth;
+using Robust.Shared.Containers;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared._Stories.Spaf;
 
@@ -45,7 +45,7 @@ public abstract partial class SharedSpafSystem : EntitySystem
         if (!Resolve(uid, ref component))
             return false;
 
-        if (component.CurrentHunger - amount < 0)
+        if (_hunger.GetHunger(component) - amount < 0)
         {
             _popup.PopupEntity(Loc.GetString("need-more-food"), uid, uid);
             return false;
@@ -137,7 +137,7 @@ public abstract partial class SharedSpafSystem : EntitySystem
         if (args.Handled)
             return;
 
-        _popup.PopupEntity("" + component.CurrentHunger, uid, uid);
+        _popup.PopupEntity("" + _hunger.GetHunger(component), uid, uid);
 
         args.Handled = true;
     }
