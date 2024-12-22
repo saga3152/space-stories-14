@@ -5,6 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using Content.Server._Corvax.Sponsors;
+using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
 using Content.Server.Database;
 using Content.Server.GameTicking;
@@ -62,6 +63,7 @@ namespace Content.Server.Connection
         [Dependency] private readonly IGameTiming _gameTiming = default!;
         [Dependency] private readonly ILogManager _logManager = default!;
         [Dependency] private readonly IChatManager _chatManager = default!;
+        [Dependency] private readonly IAdminManager _adminManager = default!;
 
         private ISawmill _sawmill = default!;
         private readonly Dictionary<NetUserId, TimeSpan> _temporaryBypasses = [];
@@ -282,6 +284,16 @@ namespace Content.Server.Connection
             var isQueueEnabled = _cfg.GetCVar(CCCVars.QueueEnabled);
             if (_plyMgr.PlayerCount >= _cfg.GetCVar(CCVars.SoftMaxPlayers) && !isPrivileged && !isQueueEnabled && !wasInGame)
             // Corvax-Queue-End
+
+            var adminBypass = _cfg.GetCVar(CCVars.AdminBypassMaxPlayers) && adminData != null;
+            var softPlayerCount = _plyMgr.PlayerCount;
+
+            if (!_cfg.GetCVar(CCVars.AdminsCountForMaxPlayers))
+            {
+                softPlayerCount -= _adminManager.ActiveAdmins.Count();
+            }
+
+            if ((softPlayerCount >= _cfg.GetCVar(CCVars.SoftMaxPlayers) && !adminBypass) && !wasInGame)
             {
                 return (ConnectionDenyReason.Full, Loc.GetString("soft-player-cap-full"), null);
             }
@@ -298,7 +310,7 @@ namespace Content.Server.Connection
 
                 foreach (var whitelist in _whitelists)
                 {
-                    if (!IsValid(whitelist, _plyMgr.PlayerCount))
+                    if (!IsValid(whitelist, softPlayerCount))
                     {
                         // Not valid for current player count.
                         continue;
