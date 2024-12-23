@@ -85,10 +85,9 @@
           - PillCanister
   - type: SolutionContainerManager
     solutions:
-      storageBuffer: {}
-      outputBuffer: {}
+      buffer: {}
   - type: DumpableSolution
-    solution: storageBuffer
+    solution: buffer
     unlimited: true
   - type: GuideHelp
     guides:
