@@ -71,6 +71,8 @@
     speechVerb: Robotic
     speechSounds: Borg
     speechBubbleOffset: 0.45
+  - type: TTS # Stories-TTS
+    voice: adventure_core
   - type: Telephone
     ringTone: /Audio/Machines/double_ring.ogg
     listeningRange: 2.5
