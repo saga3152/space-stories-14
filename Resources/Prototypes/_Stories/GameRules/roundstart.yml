@@ -3,13 +3,13 @@
   parent: BaseGameRule
   components:
   - type: GameRule
-    minPlayers: 15
+    minPlayers: 30
   - type: ShadowlingRule
   - type: AntagSelection
     definitions:
     - prefRoles: [ Shadowling ]
-      max: 3
-      playerRatio: 15
+      max: 2
+      playerRatio: 30
       briefing:
         text: shadowling-role-greeting
         color: DarkRed
