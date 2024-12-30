@@ -1,9 +1,9 @@
 - type: gameMap
   id: CorvaxDelta
   mapName: '[KT] Delta Station'
-  mapPath: /Maps/_Stories/corvax_delta.yml
+  mapPath: /Maps/_Stories/delta.yml
   maxRandomOffset: 0
-  minPlayers: 80
+  minPlayers: 70
   stations:
     Delta:
       stationProto: StandardNanotrasenStation
@@ -11,7 +11,7 @@
         - type: StationPrison
           gameMap: StoriesPrison
         - type: StationNameSetup
-          mapNameTemplate: '{0} Дельта {1}'
+          mapNameTemplate: '{0} Delta Station {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: 'TG'

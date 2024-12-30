@@ -1,22 +1,10 @@
 - type: gameMapPool
   id: StoriesDefaultMapPool
   maps:
-  - StoriesAmber
-  - StoriesBarratry
   - StoriesBagel
   - StoriesBeta
   - StoriesBox
-  - StoriesCore
   - StoriesFland
   - StoriesKilo
-  - StoriesMarathon
   - StoriesMeta
-  - StoriesOasis
-  - StoriesOmega
-  - StoriesPacked
-  - StoriesTrain
-  - StoriesCog
-  - CorvaxAstra
-  - CorvaxAvrite
   - CorvaxDelta
-  - CorvaxPaper

@@ -1,8 +1,8 @@
 - type: gameMap
   id: StoriesFland
   mapName: '[КТ] Fland Installation'
-  mapPath: /Maps/_Stories/fland.yml
-  minPlayers: 70
+  mapPath: /Maps/fland.yml
+  minPlayers: 50
   stations:
     Fland:
       stationProto: StandardNanotrasenStation

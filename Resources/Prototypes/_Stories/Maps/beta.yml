@@ -1,15 +1,13 @@
 - type: gameMap
   id: StoriesBeta
-  mapName: '[КТ] Beta Station'
+  mapName: 'Beta Station'
   mapPath: /Maps/_Stories/beta.yml
-  minPlayers: 30
-  maxPlayers: 70
+  minPlayers: 0
+  maxPlayers: 50
   stations:
     Beta:
       stationProto: StandardNanotrasenStation
       components:
-        - type: StationPrison
-          gameMap: StoriesPrison
         - type: StationNameSetup
           mapNameTemplate: '{0} Beta Station {1}'
           nameGenerator:
@@ -17,8 +15,6 @@
             prefixCreator: '14'
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/_Stories/Shuttles/emergency_beta.yml
-        - type: StationCargoShuttle
-          path: /Maps/Shuttles/cargo.yml
         - type: StationJobs
           availableJobs:
             #service
@@ -34,17 +30,17 @@
             #engineering
             ChiefEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 2, 2 ]
-            StationEngineer: [ 4, 4 ]
+            StationEngineer: [ 3, 3 ]
             TechnicalAssistant: [ 2, 2 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 2, 2 ]
-            MedicalDoctor: [ 3, 3 ]
+            MedicalDoctor: [ 2, 2 ]
             Paramedic: [ 1, 1 ]
             MedicalIntern: [ 3, 3 ]
             #science
             ResearchDirector: [ 1, 1 ]
-            Scientist: [ 5, 5 ]
+            Scientist: [ 3, 3 ]
             ResearchAssistant: [ 2, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
