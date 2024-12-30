@@ -8,6 +8,35 @@
 # WallSolid: Window
 # Table: null
 
+# Stories-Start
+
+# Remove LGBT-Pin
+ClothingNeckGoldAutismPin: null
+ClothingNeckAromanticPin: null
+ClothingNeckNonBinaryPin: null
+ClothingNeckPansexualPin: null
+ClothingNeckBisexualPin: null
+ClothingNeckIntersexPin: null
+ClothingNeckLesbianPin: null
+ClothingNeckAsexualPin: null
+ClothingNeckAutismPin: null
+ClothingNeckTransPin: null
+ClothingNeckLGBTPin: null
+
+# Remove LGBT-Flag
+LGBTQHandyFlag: null
+LGBTQFlag: null
+
+# Remove LGBT-Cloak
+ClothingNeckCloakIntersex: null
+ClothingNeckCloakTrans: null
+ClothingNeckCloakGay: null
+
+# Remove LGBT-Backpack
+ClothingBackpackDebug3: null
+
+# Stories-End
+
 # 2023-07-03
 ClothingHeadHelmetHelmet: ClothingHeadHelmetBasic
 ClothingHeadHelmetHelmetOld: ClothingHeadHelmetBasic
