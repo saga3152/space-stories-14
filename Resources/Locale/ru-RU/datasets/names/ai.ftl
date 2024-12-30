@@ -1,12 +1,9 @@
 names-ai-dataset-1 = 16-20
 names-ai-dataset-2 = 512k
-
 # Ought to be enough for anybody
 names-ai-dataset-3 = 640k
-
 names-ai-dataset-4 = "790"
 names-ai-dataset-5 = Адаптивный Манипулятор
-
 names-ai-dataset-6 = АЛИСА
 names-ai-dataset-7 = Союзный Мастер-Компьютер
 names-ai-dataset-8 = Альфа 2
@@ -90,3 +87,23 @@ names-ai-dataset-85 = XERXES
 names-ai-dataset-86 = Орион
 names-ai-dataset-87 = Астрид
 names-ai-dataset-88 = Луна
+names-ai-dataset-89 = Сорока
+names-ai-dataset-90 = Соло
+names-ai-dataset-91 = Программа управления станцией
+names-ai-dataset-92 = AINУ (ИИ не Unix)
+names-ai-dataset-93 = Супер 35
+names-ai-dataset-94 = Главный хирург
+names-ai-dataset-95 = ТВА
+names-ai-dataset-96 = Терминал
+names-ai-dataset-97 = TPM 3.0
+names-ai-dataset-98 = Полностью переводимый
+names-ai-dataset-99 = Ухоженный
+names-ai-dataset-100 = Улисс
+names-ai-dataset-101 = W1k1
+names-ai-dataset-102 = X-5
+names-ai-dataset-103 = X.A.N.A.
+names-ai-dataset-104 = Ксеркс
+names-ai-dataset-105 = Z-1
+names-ai-dataset-106 = Z-2
+names-ai-dataset-107 = Z-3
+names-ai-dataset-108 = Зед
