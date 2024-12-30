@@ -195,3 +195,15 @@
   storage:
     back:
     - ToyFigurineHOSP
+
+- type: loadout
+  id: ToySword
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobClown
+      time: 36000 # 10hr
+  storage:
+    back:
+    - ToySword
