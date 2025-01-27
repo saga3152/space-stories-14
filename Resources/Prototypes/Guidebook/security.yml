@@ -7,7 +7,7 @@
   - Defusal
   - CriminalRecords
   # - SpaceLaw # Stories
-  - SopSec # Stories
+  - STSopSec # Stories
 
 - type: guideEntry
   id: Forensics
