@@ -131,7 +131,7 @@ public sealed partial class ConversionSystem
         RaiseLocalEvent(target, (object)ev, true);
         Dirty(target, component);
     }
-    public void MindRemoveRoles(EntityUid mindId, List<ProtoId<EntityPrototype>>? roles, MindComponent? mind = null)
+    public void MindRemoveRoles(EntityUid mindId, List<EntProtoId>? roles, MindComponent? mind = null)
     {
         if (!Resolve(mindId, ref mind))
             return;
@@ -157,7 +157,7 @@ public sealed partial class ConversionSystem
 
         mind.MindRoles?.Clear();
     }
-    public bool EntityPrototyped(EntityUid role, List<ProtoId<EntityPrototype>> roles)
+    public bool EntityPrototyped(EntityUid role, List<EntProtoId> roles)
     {
         var proto = MetaData(role).EntityPrototype;
 
