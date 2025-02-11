@@ -1,0 +1,17 @@
+- type: artifactEffect
+  id: EffectChangeBloodChemical
+  targetDepth: 3
+  effectHint: artifact-effect-hint-biochemical
+  components:
+  - type: ChangeBloodChemical
+    BloodChemicals:
+    - Blood
+    - CopperBlood
+    - Slime
+    - Water
+    UsefulChemicals:
+    - Bicaridine
+    FunChemicals:
+    - Beer
+    - Cola
+    
