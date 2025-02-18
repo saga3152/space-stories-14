@@ -1,13 +1,14 @@
 - type: npcFaction
   id: Dragon
   hostile:
-    - NanoTrasen
-    - Syndicate
-    - Xeno
-    - PetsNT
-    - Zombie
-    - Revolutionary
-    - AllHostile
+  - NanoTrasen
+  - Syndicate
+  - Xeno
+  - PetsNT
+  - Zombie
+  - Revolutionary
+  - AllHostile
+  - Wizard
 
 - type: npcFaction
   id: NanoTrasen
@@ -19,13 +20,14 @@
   - Revolutionary
   - Dragon
   - AllHostile
+  - Wizard
   - Shadowling # Stories-Shadowling
 
 - type: npcFaction
   id: Mouse
   hostile:
-    - PetsNT
-    - AllHostile
+  - PetsNT
+  - AllHostile
 
 - type: npcFaction
   id: Passive
@@ -49,6 +51,7 @@
   - Zombie
   - Revolutionary
   - AllHostile
+  - Wizard
 
 - type: npcFaction
   id: SimpleNeutral
@@ -63,6 +66,7 @@
   - Zombie
   - Dragon
   - AllHostile
+  - Wizard
   - Shadowling # Stories-Shadowling
 
 - type: npcFaction
@@ -75,6 +79,7 @@
   - Zombie
   - Revolutionary
   - AllHostile
+  - Wizard
 
 - type: npcFaction
   id: Zombie
@@ -87,6 +92,7 @@
   - PetsNT
   - Revolutionary
   - AllHostile
+  - Wizard
 
 - type: npcFaction
   id: Revolutionary
@@ -97,6 +103,7 @@
   - Dragon
   - Shadowling # Stories-Shadowling
   - AllHostile
+  - Wizard
 
 - type: npcFaction
   id: AllHostile
@@ -112,3 +119,16 @@
   - Xeno
   - Zombie
   - Revolutionary
+  - Wizard
+
+- type: npcFaction
+  id: Wizard
+  hostile:
+  - NanoTrasen
+  - Dragon
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - AllHostile
