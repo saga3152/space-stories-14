@@ -21,6 +21,7 @@
   id: ChemistryStatic
   recipes:
   - Jug
+  - BigJug # Stories
   - ChemistryEmptyBottle01
   - ClothingEyesGlassesChemical
 
