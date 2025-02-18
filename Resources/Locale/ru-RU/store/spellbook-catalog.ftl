@@ -13,8 +13,23 @@ spellbook-charge-name = Зарядка
 spellbook-charge-desc = Добавляет заряд вашей палочке!
 spellbook-ethereal-jaunt-name = Эфирная прогулка
 spellbook-ethereal-jaunt-description = Перейдите на Эфирный план чтобы ускользнуть от врагов!
-spellbook-mind-swap-name = Обмен телами
-spellbook-mind-swap-description = Поменяться телами с другим человеком!
+spellbook-mind-swap-name = Обмен Разумом
+spellbook-mind-swap-description = Меняет тело с другим человеком!
+
+spellbook-smite-name = Кара
+spellbook-smite-desc = Они вам не нравятся? РАЗНЕСИТЕ их в потроха! Требуются мантия и шляпа волшебника.
+
+spellbook-cluwne-name = Проклятие Клуни
+spellbook-cluwne-desc = Для тех случаев, когда вы по-настоящему ненавидите кого-то, и одной Кары недостаточно. Требуется мантия и шляпа волшебника.
+
+spellbook-slip-name = Скользкий Путь
+spellbook-slip-desc = Изучите древние приемы Уборщика и заколдуйте свою цель, чтобы она подскальзывалась. Требуется мантия и шляпа волшебника.
+
+spellbook-item-recall-name = Призыв Предмета
+spellbook-item-recall-description = Отметьте удерживаемый предмет и призовите его обратно в любое время одним щелчком пальцев!
+
+spellbook-animate-name = Оживление
+spellbook-animate-description = Оживите неодушевленный предмет!
 
 # Equipment
 
