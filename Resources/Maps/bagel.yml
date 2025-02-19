@@ -60888,26 +60888,12 @@ entities:
     - type: Transform
       pos: -41.75516,14.452198
       parent: 60
-- proto: ClothingNeckAromanticPin
-  entities:
-  - uid: 24089
-    components:
-    - type: Transform
-      pos: 83.621025,-13.51627
-      parent: 60
 - proto: ClothingNeckBling
   entities:
   - uid: 18461
     components:
     - type: Transform
       pos: 5.9221196,-5.3832207
-      parent: 60
-- proto: ClothingNeckCloakTrans
-  entities:
-  - uid: 7082
-    components:
-    - type: Transform
-      pos: -40.498245,-36.02266
       parent: 60
 - proto: ClothingNeckHeadphones
   entities:
@@ -111038,13 +111024,6 @@ entities:
     - type: Transform
       pos: 21.334734,-11.3924055
       parent: 60
-- proto: LGBTQHandyFlag
-  entities:
-  - uid: 9548
-    components:
-    - type: Transform
-      pos: -41.49743,-36.512333
-      parent: 60
 - proto: LightBulb
   entities:
   - uid: 19737
@@ -131933,6 +131912,13 @@ entities:
     components:
     - type: Transform
       pos: -9.5,-27.5
+      parent: 60
+- proto: SpawnPointJediNt
+  entities:
+  - uid: 7082
+    components:
+    - type: Transform
+      pos: -26.5,-19.5
       parent: 60
 - proto: SpawnPointLatejoin
   entities:
