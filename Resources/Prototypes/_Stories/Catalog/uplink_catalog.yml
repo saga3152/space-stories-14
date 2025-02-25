@@ -1,4 +1,17 @@
 - type: listing
+  id: UplinkGarrote
+  name: Удавка
+  description: Излюбленный профессионалами инструмент для скрытых убийств. Позволяет взять стоящую к вам спиной жертву в мёртвую хватку, неминуемо убивая её.
+  productEntity: STGarrote
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 6
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkWeaponry
+
+- type: listing
   id: UplinkClothingTacticalMaid
   name: Набор горничной синдиката
   description: Предполагается, что у лучших горничных должны быть дизайнерские костюмы.
