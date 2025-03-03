@@ -265,3 +265,7 @@ ui-options-chat-window-opacity = Прозрачность окна чата
 ui-options-speech-bubble-text-opacity = Прозрачность окна всплывающего текста
 ui-options-speech-bubble-speaker-opacity = Прозрачность иконки общения
 ui-options-speech-bubble-background-opacity = Прозрачность фона окна всплывающего текста
+
+## Admin menu
+
+ui-options-enable-classic-overlay = Вернуть классический оверлей антагонистов
