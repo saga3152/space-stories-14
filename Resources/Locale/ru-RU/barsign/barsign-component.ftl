@@ -121,7 +121,7 @@ barsign-prototype-name-spacebucks = Спейсбакс
 barsign-prototype-description-spacebucks = От них нельзя скрыться, даже в космосе, и даже после того, как некоторые стали называть их "срубли".
 
 ## Maltroach
-barsign-prototype-name-maltroach = Мальтаракан
+barsign-prototype-name-maltroach = Мольтаракан
 barsign-prototype-description-maltroach = Пищит!
 
 ## Whiskey Echoes
