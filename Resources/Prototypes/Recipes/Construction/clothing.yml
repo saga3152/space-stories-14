@@ -98,13 +98,13 @@
   objectType: Item
 
 - type: construction
-  name: lizard plushie slippers
+  name: плюшевые тапочки в виде унатха # Stories-CraftTranslate
   id: ClothingShoeSlippersLizard
   graph: ClothingShoeSlippersLizard
   startNode: start
   targetNode: shoes
   category: construction-category-clothing
-  description: An adorable pair of slippers that resemble a lizardperson. Combine this with some other green clothing and you'll be the coolest crewmember on the station!
+  description: Очаровательные тапочки, напоминающие унатха. Сочетайте их с какой-нибудь другой одеждой зеленого цвета, и вы станете самым крутым членом экипажа на станции! # Stories-CraftTranslate
   icon: { sprite: Clothing/Shoes/Misc/lizard-slippers.rsi, state: icon }
   objectType: Item
 
