@@ -21,13 +21,13 @@
   objectType: Item
 
 - type: construction
-  name: yellow light tube
+  name: жёлтая лампа-трубка # Stories-CraftTranslate
   id: YellowLight
   graph: YellowLight
   startNode: start
   targetNode: icon
   category: construction-category-utilities
-  description: A high powered light tube containing a yellow crystal
+  description: Мощная лампа, внутри которой находится жёлтый кристалл. # Stories-CraftTranslate
   icon: { sprite: Objects/Power/light_tube.rsi, state: normal }
   objectType: Item
 
@@ -54,13 +54,13 @@
   objectType: Item
 
 - type: construction
-  name: black light tube
+  name: чёрная лампа-трубка # Stories-CraftTranslate
   id: BlackLight
   graph: BlackLight
   startNode: start
   targetNode: icon
   category: construction-category-utilities
-  description: A high powered light tube containing a black crystal. It won't be very bright.
+  description: Мощная лампа, внутри которой находится чёрный кристалл. Она будет не очень яркой. # Stories-CraftTranslate
   icon: { sprite: Objects/Power/light_tube.rsi, state: normal }
   objectType: Item
 
@@ -109,13 +109,13 @@
   objectType: Item
 
 - type: construction
-  name: yellow light bulb
+  name: жёлтая лампа # Stories-CraftTranslate
   id: YellowLightBulb
   graph: YellowLightBulb
   startNode: start
   targetNode: icon
   category: construction-category-utilities
-  description: A high powered light bulb containing a yellow crystal.
+  description: Мощная электрическая лампочка, внутри которой находится жёлтый кристалл. # Stories-CraftTranslate
   icon: { sprite: Objects/Power/light_bulb.rsi, state: normal }
   objectType: Item
 
@@ -142,13 +142,13 @@
   objectType: Item
 
 - type: construction
-  name: black light bulb
+  name: чёрная лампа # Stories-CraftTranslate
   id: BlackLightBulb
   graph: BlackLightBulb
   startNode: start
   targetNode: icon
   category: construction-category-utilities
-  description: A high powered light bulb containing a black crystal. It won't be very bright.
+  description: Мощная электрическая лампочка, внутри которой находится чёрный кристалл. Она будет не очень яркой. # Stories-CraftTranslate
   icon: { sprite: Objects/Power/light_bulb.rsi, state: normal }
   objectType: Item
 
