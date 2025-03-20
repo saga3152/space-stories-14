@@ -114,7 +114,7 @@ delivery-spam-alternate-timeline = [color=red]
 
                                    Слава Nanotrasen.
 
-delivery-spam-narsie-cult =                         [color=#134975][head=2]Дитя НарСи[/head][/color]
+delivery-spam-narsie-cult =                         [color=#134975][head=2]Дитя Нар`Си[/head][/color]
                                                          Начало Новой Эры
                             {"[bold]══──══──══──══──══──══──══──══──══──══──══[/bold]"}
 
