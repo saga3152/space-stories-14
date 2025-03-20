@@ -14,5 +14,7 @@ ent-ShardCrystalYellow = жёлтый осколок кристалла
     .desc = { ent-ShardCrystalBase.desc }
 ent-ShardCrystalBlack = чёрный осколок кристалла
     .desc = { ent-ShardCrystalBase.desc }
+ent-ShardCrystalRed = красный осколок кристалла
+    .desc = { ent-ShardCrystalBase.desc }
 ent-ShardCrystalRandom = случайный осколок кристалла
     .desc = { ent-ShardCrystalBase.desc }
