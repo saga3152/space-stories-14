@@ -160,3 +160,5 @@ ent-MobReindeerBuck = северный олень-самец
     .desc = Думаете, он может тянуть сани?
 ent-MobReindeerDoe = северный олень-самка
     .desc = Думаете, она может тянуть сани?
+ent-RandomCloneSpawner = случайный клон
+    .suffix = Не антагонист
