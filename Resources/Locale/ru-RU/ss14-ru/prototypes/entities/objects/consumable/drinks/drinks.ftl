@@ -452,3 +452,6 @@ ent-DrinkTheSunAlsoRises = { ent-DrinkGlass }
 ent-DrinkWhiskeySour = { ent-DrinkGlass }
     .suffix = Кислый виски
     .desc = { ent-DrinkGlass.desc }
+ent-DrinkMimeosa = { ent-DrinkGlass }
+    .suffix = Мимеоза
+    .desc = { ent-DrinkGlass.desc }
