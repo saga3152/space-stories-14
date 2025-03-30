@@ -26,8 +26,8 @@ public sealed class StandingStateSystem : EntitySystem
         base.Initialize();
 
         SubscribeLocalEvent<StandingStateComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiersEvent);
-        SubscribeLocalEvent<StandingStateComponent, DownDoAfterEvent>(OnDownDoAfterEvent);
-        SubscribeLocalEvent<StandingStateComponent, StandDoAfterEvent>(OnStandDoAfterEvent);
+        SubscribeLocalEvent<StandingStateComponent, FellDownEvent.DownDoAfterEvent>(OnDownDoAfterEvent);
+        SubscribeLocalEvent<StandingStateComponent, FellDownEvent.StandDoAfterEvent>(OnStandDoAfterEvent);
     }
     // Stories-Crawling-End
 
@@ -176,7 +176,7 @@ public sealed class StandingStateSystem : EntitySystem
 }
 
     // Stories-Crawling-Start
-    private void OnStandDoAfterEvent(EntityUid uid, StandingStateComponent standing, ref StandDoAfterEvent ev)
+    private void OnStandDoAfterEvent(EntityUid uid, StandingStateComponent standing, ref FellDownEvent.StandDoAfterEvent ev)
     {
         if (ev.Cancelled)
             return;
@@ -184,7 +184,7 @@ public sealed class StandingStateSystem : EntitySystem
         Stand(uid, standingState: standing);
     }
 
-    private void OnDownDoAfterEvent(EntityUid uid, StandingStateComponent standing, ref DownDoAfterEvent ev)
+    private void OnDownDoAfterEvent(EntityUid uid, StandingStateComponent standing, ref FellDownEvent.DownDoAfterEvent ev)
     {
         if (ev.Cancelled)
             return;
@@ -236,7 +236,7 @@ public sealed class DownedEvent : EntityEventArgs
 /// <summary>
 /// Raised after an entity falls down.
 /// </summary>
-public sealed class FellDownEvent : EntityEventArgs
+public sealed partial class FellDownEvent : EntityEventArgs
 {
     public EntityUid Uid { get; }
 
