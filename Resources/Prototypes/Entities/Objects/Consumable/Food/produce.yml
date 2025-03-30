@@ -995,7 +995,7 @@
   components:
   - type: FlavorProfile
     flavors:
-      - eggplant
+    - eggplant
   - type: SolutionContainerManager
     solutions:
       food:
