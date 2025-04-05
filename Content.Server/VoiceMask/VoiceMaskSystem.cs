@@ -35,7 +35,6 @@ public sealed partial class VoiceMaskSystem : EntitySystem
     {
         args.Args.VoiceName = GetCurrentVoiceName(entity);
         args.Args.SpeechVerb = entity.Comp.VoiceMaskSpeechVerb ?? args.Args.SpeechVerb;
-        args.Args.VoiceId = entity.Comp.VoiceId; // Corvax-TTS
     }
 
     #region User inputs from UI

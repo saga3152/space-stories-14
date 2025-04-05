@@ -14,13 +14,11 @@ public sealed class TransformSpeakerNameEvent : EntityEventArgs, IInventoryRelay
     public EntityUid Sender;
     public string VoiceName;
     public ProtoId<SpeechVerbPrototype>? SpeechVerb;
-    public string? VoiceId; // Corvax-TTS
 
     public TransformSpeakerNameEvent(EntityUid sender, string name)
     {
         Sender = sender;
         VoiceName = name;
         SpeechVerb = null;
-        VoiceId = null; // Corvax-TTS
     }
 }
