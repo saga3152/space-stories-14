@@ -45,9 +45,9 @@ namespace Content.Server._Stories.StationGoal
         /// </summary>
         /// <returns>True if at least one fax received paper</returns>
         
-        private bool IsNotEnoughPlayers(StationGoalPrototype goal)
+        private bool IsNotEnoughPlayers(StationGoalPrototype checkGoal)
         {
-            return (_playerManager.PlayerCount <= Goal.OnlineLess);
+            return (_playerManager.PlayerCount < checkGoal.OnlineLess);
         }
         public bool TrySendStationGoal(StationGoalPrototype goal)
         {

@@ -36,7 +36,7 @@
 - type: stationGoal
   id: StationGoalBorgbuild
   text: station-goal-borgbuild
-  onlineLess: 30 #Сложность 2
+  onlineLess: 20 #Сложность 1
 
 - type: stationGoal
   id: StationGoalColonization
