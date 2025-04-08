@@ -1,64 +1,64 @@
 - type: stationGoal
   id: StationGoalFree
   text: station-goal-free
-  onlineMin: 20 #Сложность 0
+  onlineMin: 0 #Сложность 0
 
 - type: stationGoal
   id: StationGoalShuttle
   text: station-goal-shuttle
-  onlineMin: 50 #Сложность 3
+  onlineMin: 40 #Сложность 3
 
 - type: stationGoal
   id: StationGoalSingularity
   text: station-goal-singularity
-  onlineMin: 40 #Сложность 2
+  onlineMin: 30 #Сложность 2
 
 - type: stationGoal
   id: StationGoalSolarPanels
   text: station-goal-solar-panels
-  onlineMin: 30 #Сложность 1
+  onlineMin: 20 #Сложность 1
 
 - type: stationGoal
   id: StationGoalArtifacts
   text: station-goal-artifacts
-  onlineMin: 30 #Сложность 1
+  onlineMin: 20 #Сложность 1
 
 - type: stationGoal
   id: StationGoalBank
   text: station-goal-bank
-  onlineMin: 50 #Сложность 3
+  onlineMin: 40 #Сложность 3
 
 - type: stationGoal
   id: StationGoalZoo
   text: station-goal-zoo
-  onlineMin: 30 #Сложность 1
+  onlineMin: 20 #Сложность 1
 
 - type: stationGoal
   id: StationGoalBorgbuild
   text: station-goal-borgbuild
-  onlineMin: 40 #Сложность 2
+  onlineMin: 30 #Сложность 2
 
 - type: stationGoal
   id: StationGoalColonization
   text: station-goal-colonization
-  onlineMin: 50 #Сложность 3
+  onlineMin: 40 #Сложность 3
 
 - type: stationGoal
   id: StationGoalTesla
   text: station-goal-tesla
-  onlineMin: 40 #Сложность 2
+  onlineMin: 30 #Сложность 2
 
 - type: stationGoal
   id: StationGoalBotany
   text: station-goal-botany
-  onlineMin: 40 #Сложность 2
+  onlineMin: 30 #Сложность 2
 
 - type: stationGoal
   id: StationGoalArtifactsBank
   text: station-goal-artifacts-bank
-  onlineMin: 50 #Сложность 3
+  onlineMin: 40 #Сложность 3
 
 - type: stationGoal
   id: StationGoalShootingGallery
   text: station-goal-shooting-gallery
-  onlineMin: 50 #Сложность 3
+  onlineMin: 40 #Сложность 3
