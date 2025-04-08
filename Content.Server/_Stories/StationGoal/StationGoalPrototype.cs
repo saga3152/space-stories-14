@@ -9,6 +9,6 @@ namespace Content.Server._Stories.StationGoal
 
         [DataField("text")] public string Text { get; set; } = string.Empty;
 
-        [DataField("onlineMin")] public int? OnlineMin { get; set; }
+        [DataField("onlineLess")] public int? OnlineLess { get; set; }
     }
 }

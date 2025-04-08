@@ -47,7 +47,7 @@ namespace Content.Server._Stories.StationGoal
         
         private bool IsNotEnoughPlayers(StationGoalPrototype goal)
         {
-            return (_playerManager.PlayerCount <= Goal.OnlineMin);
+            return (_playerManager.PlayerCount <= Goal.OnlineLess);
         }
         public bool TrySendStationGoal(StationGoalPrototype goal)
         {
