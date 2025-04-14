@@ -20,16 +20,34 @@ public sealed class StandingStateSystem : EntitySystem
     // If StandingCollisionLayer value is ever changed to more than one layer, the logic needs to be edited.
     private const int StandingCollisionLayer = (int) CollisionGroup.MidImpassable;
 
-    // Stories-Crawling-Start
     public override void Initialize()
     {
         base.Initialize();
+        SubscribeLocalEvent<StandingStateComponent, AttemptMobCollideEvent>(OnMobCollide);
+        SubscribeLocalEvent<StandingStateComponent, AttemptMobTargetCollideEvent>(OnMobTargetCollide);
 
+        // Stories-Crawling Start
         SubscribeLocalEvent<StandingStateComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiersEvent);
         SubscribeLocalEvent<StandingStateComponent, FellDownEvent.DownDoAfterEvent>(OnDownDoAfterEvent);
         SubscribeLocalEvent<StandingStateComponent, FellDownEvent.StandDoAfterEvent>(OnStandDoAfterEvent);
+        // Stories-Crawling End
     }
-    // Stories-Crawling-End
+
+    private void OnMobTargetCollide(Entity<StandingStateComponent> ent, ref AttemptMobTargetCollideEvent args)
+    {
+        if (!ent.Comp.Standing)
+        {
+            args.Cancelled = true;
+        }
+    }
+
+    private void OnMobCollide(Entity<StandingStateComponent> ent, ref AttemptMobCollideEvent args)
+    {
+        if (!ent.Comp.Standing)
+        {
+            args.Cancelled = true;
+        }
+    }
 
     public bool IsDown(EntityUid uid, StandingStateComponent? standingState = null)
     {
