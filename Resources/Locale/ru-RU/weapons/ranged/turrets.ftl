@@ -1,4 +1,8 @@
-# Deployable turret component
+ent-WeaponEnergyTurretStation = сторожевая турель
+    .desc = Высокотехнологичная автономная система оружия, предназначенная для предотвращения проникновения посторонних лиц в секретные зоны.
+ent-WeaponEnergyTurretAI = сторожевая турель ИИ
+    .desc = Высокотехнологичная автономная система вооружений под непосредственным управлением местного искусственного интеллекта.
+
 deployable-turret-component-activating = Разворачивание...
 deployable-turret-component-deactivating = Деактивация...
 deployable-turret-component-activate = Активать
