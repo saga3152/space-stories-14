@@ -797,13 +797,13 @@
     - !type:TileNotBlocked
 
 - type: construction
-  name: turnstile
+  name: турникет # Stories-CraftTranslate
   id: Turnstile
   graph: Turnstile
   startNode: start
   targetNode: turnstile
   category: construction-category-structures
-  description: A mechanical door that permits one-way access and prevents tailgating.
+  description: Механическая дверь, обеспечивающая односторонний доступ и препятствующая проникновению посторонних. # Stories-CraftTranslate
   icon:
     sprite: Structures/Doors/turnstile.rsi
     state: turnstile
