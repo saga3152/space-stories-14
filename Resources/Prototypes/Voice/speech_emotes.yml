@@ -316,6 +316,7 @@
    - gasp
    - gasps
    - gasped
+   - задыхается # Stories-Localization
 
 - type: emote
   id: DefaultDeathgasp
