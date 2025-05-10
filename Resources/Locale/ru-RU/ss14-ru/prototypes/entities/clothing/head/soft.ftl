@@ -63,6 +63,6 @@ ent-ClothingHeadHatParamedicsoft = кепка парамедика
     .desc = Бейсболка парамедика с логотипом медицинского отдела.
 ent-ClothingHeadHatParamedicsoftFlipped = кепка парамедика
     .desc = { ent-ClothingHeadHeadHatBaseFlipped.desc }
-ent-ClothingHeadHatParamedicsoftFlipped = фуражка командования
+ent-ClothingHeadHatCommandSoftFlipped = фуражка командования
     .suffix = Перевёрнутый
     .desc = { ent-ClothingHeadHatCommandSoft.desc }
