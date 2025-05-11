@@ -1,6 +1,6 @@
 ore-silo-ui-title = Бункер Ресурсов
-ore-silo-ui-label-clients = Machines
-ore-silo-ui-label-mats = Машины
+ore-silo-ui-label-clients = Оборудование
+ore-silo-ui-label-mats = Ресурсы
 ore-silo-ui-itemlist-entry = {$linked ->
     [true] {"[Соединено] "}
     *[False] {""}

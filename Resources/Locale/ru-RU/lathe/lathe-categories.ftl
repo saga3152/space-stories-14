@@ -2,7 +2,7 @@
 lathe-category-circuitry = Электроника
 lathe-category-clothing = Одежда
 lathe-category-lights = Лампы
-lathe-category-machines = Машины
+lathe-category-machines = Оборудование
 lathe-category-parts = Компоненты
 lathe-category-robotics = Робототехника
 lathe-category-tools = Инструменты
