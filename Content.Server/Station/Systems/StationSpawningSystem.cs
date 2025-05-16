@@ -130,11 +130,6 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
 
         entity ??= Spawn(species.Prototype, coordinates);
 
-        if (_randomizeCharacters)
-        {
-            profile = HumanoidCharacterProfile.RandomWithSpecies(speciesId);
-        }
-
         DoJobSpecials(job, entity.Value, false); // Stories (Нужно, чтобы стражу клинка выдались компоненты силы до одежды с мечом для привязки меча к нему)
 
         if (profile != null)
