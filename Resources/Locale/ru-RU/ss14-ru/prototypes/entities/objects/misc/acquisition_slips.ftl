@@ -15,3 +15,6 @@ ent-PaperAcquisitionSlipScience = { ent-PaperAcquisitionSlip }
 ent-PaperAcquisitionSlipService = { ent-PaperAcquisitionSlip }
     .desc = { ent-PaperAcquisitionSlip.desc }
     .suffix = Сервисный
+ent-PaperAcquisitionSlipCargo = { ent-PaperAcquisitionSlip }
+    .desc = { ent-PaperAcquisitionSlip.desc }
+    .suffix = Снабжение
