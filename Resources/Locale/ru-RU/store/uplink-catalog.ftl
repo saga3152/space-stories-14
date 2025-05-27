@@ -220,10 +220,8 @@ uplink-chameleon-name = Набор "Хамелеон"
 uplink-chameleon-desc = Рюкзак, полный вещей, оснащённых технологией хамелеона, позволяющих вам маскироваться под кого угодно на станции, и даже больше!
 uplink-clothing-no-slips-shoes-name = Нескользящая обувь
 uplink-clothing-no-slips-shoes-desc = Ботинки-хамелеоны, которые защищают вас от подскальзывания.
-
-uplink-clothing-chameleon-thieving-gloves-name = Chameleon Thieving Gloves
-uplink-clothing-chameleon-thieving-gloves-desc = Discreetly steal from pockets and improve your thieving technique with these fancy new gloves. They can change appearance to match any pair of gloves!
-
+uplink-clothing-chameleon-thieving-gloves-name = Воровские Перчатки Хамелеоны
+uplink-clothing-chameleon-thieving-gloves-desc = Ловко воруйте из карманов и отрабатывайте свои воровские навыки с этими нновыми модными перчатками. Они могут менять свой внешний вид на любую пару перчаток!
 uplink-clothing-outer-vest-web-name = Тактический жилет
 uplink-clothing-outer-vest-web-desc = Синтетический бронежилет. Имеет дополнительные ремни и баллистические пластины.
 uplink-clothing-outer-vest-web-elite-name = Элитный тактический жилет
