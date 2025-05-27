@@ -4,6 +4,17 @@
   parent: BaseMobSpeciesOrganic
   id: MobRodentia
   components:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Critical
+      180: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      60: 0.9
+      80: 0.7
+  - type: StandingState
+    crawlingSpeedModifier: 0.5
   - type: HumanoidAppearance
     species: Rodentia
     hideLayersOnEquip:
@@ -11,6 +22,8 @@
     - HeadTop
     - HeadSide
     - Snout
+  - type: Body
+    prototype: Rodentia
   - type: Hunger
   - type: Thirst
   - type: Icon
@@ -24,7 +37,6 @@
     netsync: false
     noRot: true
     drawdepth: Mobs
-    # scale: 1, 0.8        # same as  dwarves (please reconsider allowing dwarf-sized rodentia)
     layers:
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
       - map: [ "enum.HumanoidVisualLayers.Head" ]
