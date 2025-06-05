@@ -34,7 +34,7 @@ public sealed class TetherGunSystem : SharedTetherGunSystem
         if (!TryComp<SpriteComponent>(component.Tethered, out var sprite) || component.LineColor == null)
             return;
 
-        _sprite.SetColor((component.Tethered.Value, sprite), component.LineColor);
+        sprite.Color = component.LineColor.Value; // Stories
     }
 
     public override void Shutdown()
@@ -106,11 +106,17 @@ public sealed class TetherGunSystem : SharedTetherGunSystem
 
         if (TryComp<ForceGunComponent>(component.Tetherer, out var force))
         {
-            _sprite.SetColor((uid, sprite), force.LineColor);
+            // Stories Start
+            if (force.LineColor == null) return;
+            sprite.Color = force.LineColor.Value;
+            // Stories End
         }
         else if (TryComp<TetherGunComponent>(component.Tetherer, out var tether))
         {
-            _sprite.SetColor((uid, sprite), tether.LineColor);
+            // Stories Start
+            if (tether.LineColor == null) return;
+            sprite.Color = tether.LineColor.Value;
+            // Stories End
         }
     }
 
@@ -119,6 +125,6 @@ public sealed class TetherGunSystem : SharedTetherGunSystem
         if (!TryComp<SpriteComponent>(uid, out var sprite))
             return;
 
-        _sprite.SetColor((uid, sprite), Color.White);
+        sprite.Color = Color.White; // Stories
     }
 }
