@@ -1099,6 +1099,7 @@
 #    blacklist:
 #      components:
 #      - SurplusBundle
+# Stories-End
 
 - type: listing
   id: UplinkStarterKit
@@ -1119,7 +1120,7 @@
         components:
         - SurplusBundle
 
-
+# Stories-Start
 #- type: listing
 #  id: UplinkSingarityBeacon
 #  name: uplink-singularity-beacon-name
