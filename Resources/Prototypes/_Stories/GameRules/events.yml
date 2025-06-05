@@ -236,4 +236,4 @@
       duration: 1
   - type: RadiationOutburstRule
     severity: 5
-    maxSeverity: 5
+    maxSeverity: 3
