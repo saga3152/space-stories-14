@@ -33,13 +33,13 @@ public sealed class RadiationOutburst : StationEventSystem<RadiationOutburstComp
         var Rads = 0;
         foreach (var target in targetList)
         {
-            Rads = _random.Next(0, component.maxSeverity);
+            Rads = _random.Next(0, component.maxSeverity); // Либо меньше предметов с большей радиоактивностью или наоборот
             currentSeverity -= Rads;
             if (currentSeverity <= 0)
                 break;
 
-            AddComp<RadiationSourceComponent>(target);
-            target.RadiationSourceComponent.Intensity = Rads;
+            var radiationComp = EnsureComp<RadiationSourceComponent>(target);
+            radiationComp.Intensity = Rads;
         }
 
         ChatSystem.DispatchStationAnnouncement(
